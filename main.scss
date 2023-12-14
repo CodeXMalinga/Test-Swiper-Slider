@@ -21,9 +21,10 @@ h2 {
 }
 
 .swiper {
+  position: relative;
   width: 1201px;
   height: 100%;
-  // background-color: beige;
+  background-color: beige;
 }
 
 .swiper-wrapper {
@@ -33,8 +34,11 @@ h2 {
 }
 
 .swiper-container {
-  //height: 100vh;
-  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  //width: 100%;
   // background-color: aquamarine;
 }
 
@@ -47,11 +51,14 @@ h2 {
 }
 
 .swiper-button-prev {
-  margin-left: 59.5px;
+  //margin-left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .swiper-button-next {
-  margin-right: 59.5px;
+  margin-right: 0;
 }
 
 .swiper-button-prev::after {
