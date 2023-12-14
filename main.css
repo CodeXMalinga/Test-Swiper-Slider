@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Gloock&family=Poppins:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  color: #023452;
+}
+
+h2 {
+  font-family: "Gloock", serif;
+}
+
+.slider-heading {
+  color: #023452;
+  font-size: 40px;
+  opacity: 1;
+  line-height: 42px;
+}
+
+.swiper {
+  width: 1201px;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 47.33px !important;
+  width: 47.33px !important;
+  background-color: #b2e3ee;
+  border-radius: 50%;
+}
+
+.swiper-button-prev {
+  margin-left: 59.5px;
+}
+
+.swiper-button-next {
+  margin-right: 59.5px;
+}
+
+.swiper-button-prev::after {
+  align-items: center;
+  justify-content: center;
+  height: 19.56px !important;
+  width: 9.78px !important;
+  font-size: 20px !important;
+}
+
+.swiper-button-next::after {
+  align-items: center;
+  justify-content: center;
+  height: 19.56px !important;
+  width: 9.78px !important;
+  font-size: 20px !important;
+}
+
+.swiper-slide img {
+  width: 387px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  height: 117.83px !important;
+  width: 33.21px !important;
+}
+
+a,
+a:visited {
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  color: #023452;
+  text-decoration: none;
+  outline: none;
+  font-weight: 800;
+}
+
+.content h4 {
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 0.66px;
+  margin: 0;
+}
+.content h3 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 26px;
+  text-transform: capitalize;
+  letter-spacing: 0.78px;
+  margin: 0px !important;
+}
+.content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2.44px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}/*# sourceMappingURL=main.css.map */
