@@ -9,6 +9,17 @@ h2 {
   font-family: "Gloock", serif;
 }
 
+.link-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+}
+.link-a:hover .arrow {
+  transform: translateX(-100px);
+}
+
 .slider-heading {
   color: #023452;
   font-size: 40px;
@@ -19,7 +30,6 @@ h2 {
 .swiper {
   position: relative;
   width: 1201px;
-  height: 100%;
   background-color: beige;
 }
 
@@ -29,7 +39,6 @@ h2 {
 }
 
 .swiper-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -113,4 +122,54 @@ a:visited {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+a:not(.btn):not(.custom-link)::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 7.1584px;
+  width: 10.91px;
+  height: 10.91px;
+  border: 1px solid #023452;
+  transform: rotate(-45deg);
+  border-top: 0;
+  border-left: 0;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+a:not(.btn):not(.custom-link):after {
+  content: "";
+  position: absolute;
+  right: 3.91px;
+  top: 11.93px;
+  width: 32.21px;
+  height: 1px;
+  background: #023452;
+  transition: all 0.3s ease;
+}
+
+a:not(.btn):not(.custom-link) {
+  text-decoration: none;
+  padding-inline: 0 44px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-family: "Libre-Bodoni-Italic", serif;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+  letter-spacing: 0;
+  color: #023452;
+}
+
+@media (hover: hover) {
+  a:not(.btn):not(.custom-link):hover {
+    padding-inline: 44px 0;
+  }
+  a:not(.btn):not(.custom-link):hover::after {
+    right: calc(100% - 33px);
+  }
+  a:not(.btn):not(.custom-link):hover::before {
+    right: calc(100% - 32px);
+  }
 }/*# sourceMappingURL=main.css.map */
