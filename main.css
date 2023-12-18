@@ -30,7 +30,6 @@ h2 {
 .swiper {
   position: relative;
   width: 1201px;
-  background-color: beige;
 }
 
 .swiper-wrapper {
@@ -52,13 +51,11 @@ h2 {
 }
 
 .swiper-button-prev {
-  position: fixed;
-  top: 0;
-  left: 0;
+  margin-left: 11rem;
 }
 
 .swiper-button-next {
-  margin-right: 0;
+  margin-right: 11rem;
 }
 
 .swiper-button-prev::after {
