@@ -5,6 +5,15 @@ body {
   color: #023452;
 }
 
+.swiper-wrapper {
+  width: 90vw !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 h2 {
   font-family: "Gloock", serif;
 }
@@ -22,40 +31,36 @@ h2 {
 
 .slider-heading {
   color: #023452;
-  font-size: 40px;
+  font-size: 30px;
   opacity: 1;
-  line-height: 42px;
-}
-
-.swiper {
-  position: relative;
-  width: 1201px;
-}
-
-.swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.swiper-container {
-  display: flex;
-  justify-content: center;
+  line-height: 36px;
+  margin-left: 31px;
+  padding-bottom: 10% !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  height: 47.33px !important;
-  width: 47.33px !important;
+  height: 43.37px !important;
+  width: 43.37px !important;
   background-color: #b2e3ee;
   border-radius: 50%;
 }
 
+.swiper {
+  width: 315px !important;
+  position: relative;
+}
+
 .swiper-button-prev {
-  margin-left: 11rem;
+  position: absolute;
+  top: 14% !important;
+  left: 55% !important;
 }
 
 .swiper-button-next {
-  margin-right: 11rem;
+  position: absolute;
+  top: 14% !important;
+  right: 20% !important;
 }
 
 .swiper-button-prev::after {
@@ -74,9 +79,16 @@ h2 {
   font-size: 20px !important;
 }
 
+.swiper-slide {
+  display: flex;
+  width: 100% !important;
+  margin-left: auto !important;
+}
 .swiper-slide img {
-  width: 387px;
-  margin-bottom: 30px;
+  width: 100%;
+}
+.swiper-slide .content {
+  width: 100%;
 }
 
 .arrow {
@@ -97,21 +109,20 @@ a:visited {
 .content h4 {
   font-family: "Bodoni Moda", serif;
   font-style: italic;
-  font-size: 22px;
-  letter-spacing: 0.66px;
-  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1.2px;
 }
 .content h3 {
   font-family: "Bodoni Moda", serif;
-  font-size: 26px;
+  font-size: 22px;
   text-transform: capitalize;
   letter-spacing: 0.78px;
   margin: 0px !important;
 }
 .content p {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  letter-spacing: 2.44px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
 }
 
 .link {

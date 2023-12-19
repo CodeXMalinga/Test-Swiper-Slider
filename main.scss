@@ -9,6 +9,15 @@ body {
   color: $primary_color;
 }
 
+.swiper-wrapper {
+  width: 90vw !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 h2 {
   font-family: "Gloock", serif;
 }
@@ -27,47 +36,36 @@ h2 {
 
 .slider-heading {
   color: $primary_color;
-  font-size: 40px;
+  font-size: 30px;
   opacity: 1;
-  line-height: 42px;
-}
-
-.swiper {
-  position: relative;
-  width: 1201px;
-  //height: 100%;
-  //background-color: beige;
-}
-
-.swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-  // background-color: bisque;
-}
-
-.swiper-container {
-  //height: 100vh;
-  display: flex;
-  justify-content: center;
-
-  //width: 100%;
-  // background-color: aquamarine;
+  line-height: 36px;
+  margin-left: 31px;
+  padding-bottom: 10% !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  height: 47.33px !important;
-  width: 47.33px !important;
+  height: 43.37px !important;
+  width: 43.37px !important;
   background-color: $arrow_bg_color;
   border-radius: 50%;
 }
 
+.swiper {
+  width: 315px !important;
+  position: relative;
+}
+
 .swiper-button-prev {
-  margin-left: 11rem;
+  position: absolute;
+  top: 14% !important;
+  left: 55% !important;
 }
 
 .swiper-button-next {
-  margin-right: 11rem;
+  position: absolute;
+  top: 14% !important;
+  right: 20% !important;
 }
 
 .swiper-button-prev::after {
@@ -87,13 +85,19 @@ h2 {
 }
 
 .swiper-slide {
+  display: flex;
   //height: 100% !important;
-  //width: 387px !important;
+  width: 100% !important;
   //background-color: aqua;
+  margin-left: auto !important;
+
   img {
-    width: 387px;
+    width: 100%;
     //height: 306px;
-    margin-bottom: 30px;
+  }
+
+  .content {
+    width: 100%;
   }
 }
 
@@ -116,14 +120,14 @@ a:visited {
   h4 {
     font-family: "Bodoni Moda", serif;
     font-style: italic;
-    font-size: 22px;
-    letter-spacing: 0.66px;
-    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    //margin-bottom: 20px;
   }
 
   h3 {
     font-family: "Bodoni Moda", serif;
-    font-size: 26px;
+    font-size: 22px;
     text-transform: capitalize;
     letter-spacing: 0.78px;
     margin: 0px !important;
@@ -131,8 +135,8 @@ a:visited {
 
   p {
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    letter-spacing: 2.44px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
   }
 }
 
